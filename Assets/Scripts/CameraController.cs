@@ -11,21 +11,41 @@ public class CameraController : MonoBehaviour
     public float maxHeight = 40f;
     public float minHeight = 4f;
 
+    Vector3 initialPosition;
+    Quaternion initialRotation;
+    Vector2 p1;
+    Vector2 p2;
 
+    public Camera mainCamera;
+
+
+    private void Start()
+    {
+        initialPosition = transform.position;
+    }
     void Update()
     {
         float horizontalSpeed = transform.position.y * speed * Input.GetAxis("Horizontal");
         float verticalSpeed = transform.position.y * speed * Input.GetAxis("Vertical");
         float scrollspeed = -zoomSpeed * Input.GetAxis("Mouse ScrollWheel");
 
-        /*if ((transform.position.y >= maxHeight) && (scrollspeed > 0))
+        if ((transform.position.y >= maxHeight) && (scrollspeed > 0))
         {
             scrollspeed = 0;
         }
         else if((transform.position.y <= minHeight) && (scrollspeed < 0))
         {
             scrollspeed = 0;
-        }*/
+        }
+
+        if((transform.position.y + scrollspeed) > maxHeight)
+        {
+            scrollspeed = maxHeight - transform.position.y;
+        }
+        if ((transform.position.y + scrollspeed) < minHeight)
+        {
+            scrollspeed = minHeight - transform.position.y;
+        }
 
         Vector3 verticalMove = new Vector3(0, scrollspeed, 0);
         Vector3 lateralMove = horizontalSpeed * transform.right;
@@ -37,6 +57,29 @@ public class CameraController : MonoBehaviour
         Vector3 move = verticalMove + lateralMove + forwardMove;
 
         transform.position += move;
+        getCameraRotation();
 
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            transform.position = initialPosition;
+        }
+    }
+
+    void getCameraRotation()
+    {
+        if (Input.GetMouseButtonDown(1))
+        {
+            p1 = Input.mousePosition;
+        }
+        if (Input.GetMouseButton(1))
+        {
+            p2 = Input.mousePosition;
+
+            float dirX = (p1 - p2).x * rotationSpeed;
+            float dirY = (p1 - p2).y * rotationSpeed;
+
+            transform.rotation *= Quaternion.Euler(new Vector3(0, -dirX, 0));
+            mainCamera.transform.rotation *= Quaternion.Euler(new Vector3(dirY, 0, 0));
+        }
     }
 }
