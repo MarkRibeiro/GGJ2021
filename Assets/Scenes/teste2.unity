@@ -935,10 +935,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 836943732}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 316164d488b38cc4e9226d2a168b3ba8, type: 3}
+  m_Script: {fileID: 11500000, guid: 9e789b1041e873e44bc48be7c80c4b3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseMenu: {fileID: 930168563}
+  canvas: {fileID: 930168563}
+  pausePanel: {fileID: 2063503203}
+  configPanel: {fileID: 671247148}
 --- !u!4 &836943734
 Transform:
   m_ObjectHideFlags: 0
@@ -967,7 +969,7 @@ GameObject:
   - component: {fileID: 930168565}
   - component: {fileID: 930168564}
   m_Layer: 5
-  m_Name: Pause Menu
+  m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1002,7 +1004,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -1278,9 +1280,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 930168563}
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 836943733}
+        m_MethodName: pause
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1549,15 +1551,15 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2063503204}
-        m_MethodName: Restart
-        m_Mode: 1
+      - m_Target: {fileID: 836943733}
+        m_MethodName: LoadScene
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: teste2
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1054641569
@@ -1850,15 +1852,15 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2063503204}
-        m_MethodName: MenuPrincipal
-        m_Mode: 1
+      - m_Target: {fileID: 836943733}
+        m_MethodName: LoadScene
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: main menu
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1737002975
@@ -2023,7 +2025,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2063503205}
-  - component: {fileID: 2063503204}
   m_Layer: 5
   m_Name: Pause Menu
   m_TagString: Untagged
@@ -2031,18 +2032,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2063503204
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2063503203}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e789b1041e873e44bc48be7c80c4b3a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!224 &2063503205
 RectTransform:
   m_ObjectHideFlags: 0
