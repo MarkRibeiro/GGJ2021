@@ -5,8 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    public void QuitGame()
-    {
+    public string Level;
+    public void Play(){
+        SceneManager.LoadScene(Level);
+    }
+    public void QuitGame(){
+        Debug.Log("Saiu");
         Application.Quit();
     }
 }
