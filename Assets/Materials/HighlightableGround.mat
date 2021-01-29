@@ -63,19 +63,21 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
+    - _HalfSide: 1
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _Radius: 1
+    - _Radius: 2
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Center: {r: -17.63935, g: 17.755056, b: 7.4847317, a: 0}
+    - _Center: {r: 4.872219, g: 18.149, b: -16.881706, a: 0}
     - _CircleColor: {r: 1, g: 0, b: 0, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _MainColor: {r: 0, g: 1, b: 0, a: 1}
+    - _SquareColor: {r: 1, g: 0, b: 0, a: 1}
