@@ -12,7 +12,7 @@ public class CameraController : MonoBehaviour
     public float minHeight = 4f;
 
     Vector3 initialPosition;
-    Quaternion initialRotation;
+    Vector3 initialRotation;
     Vector2 p1;
     Vector2 p2;
 
@@ -22,6 +22,9 @@ public class CameraController : MonoBehaviour
     private void Start()
     {
         initialPosition = transform.position;
+        initialRotation.x = mainCamera.transform.eulerAngles.x;
+        initialRotation.y = mainCamera.transform.eulerAngles.y;
+        initialRotation.y = mainCamera.transform.eulerAngles.z;
     }
     void Update()
     {
@@ -62,6 +65,7 @@ public class CameraController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             transform.position = initialPosition;
+            mainCamera.transform.eulerAngles = new Vector3(initialRotation.x, initialRotation.y, initialRotation.z);
         }
     }
 
