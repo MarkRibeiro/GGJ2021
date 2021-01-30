@@ -412,7 +412,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Configura\xE7\xF5es"
+  m_Text: Settings
 --- !u!222 &166595208
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -620,7 +620,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Voltar
+  m_Text: Back
 --- !u!222 &213600208
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -839,7 +839,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '<b>Programadores</b>
+  m_Text: '<b>Programmers</b>
 
     Mark Ribeiro
 
@@ -925,7 +925,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Voltar
+  m_Text: Back
 --- !u!222 &455690522
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1301,7 +1301,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '<b>Artistas</b>
+  m_Text: '<b>Artists</b>
 
     Gustavo Camerano
 
@@ -1525,7 +1525,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 200}
-  m_SizeDelta: {x: 93.08649, y: 35.86084}
+  m_SizeDelta: {x: 149.90189, y: 35.86084}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1184528758
 MonoBehaviour:
@@ -1559,7 +1559,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: <b>O jogo</b>
+  m_Text: <b>The Game</b>
 --- !u!222 &1184528759
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1637,7 +1637,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Sair
+  m_Text: Quit
 --- !u!222 &1236293032
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1680,8 +1680,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 240.6, y: -7.6}
-  m_SizeDelta: {x: 283.70874, y: 81.1214}
+  m_AnchoredPosition: {x: 280.99, y: -7.6}
+  m_SizeDelta: {x: 191.4928, y: 81.1214}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1365663887
 MonoBehaviour:
@@ -1715,11 +1715,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '<b>Agradecimentos Especiais</b>
-
-    Prisma Game Lab
-
-    @ephtracy'
+  m_Text: "<b>Special Thanks\r</b>\nPrisma Game Lab\n@ephtracy"
 --- !u!222 &1365663888
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1903,7 +1899,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 194.5, y: 132.42}
+  m_AnchoredPosition: {x: 281, y: 132.42}
   m_SizeDelta: {x: 191.47668, y: 106.27559}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1485594940
@@ -1938,14 +1934,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '<b>Sonorizadores</b>
-
-    Gustavo Camerano
-
-    Leonardo Antunes
-
-    Nagib
-    Suaid'
+  m_Text: "<b>Sound Designers\r</b>\nGustavo Camerano\nLeonardo Antunes\nNagib Suaid"
 --- !u!222 &1485594941
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2144,7 +2133,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Creditos
+  m_Text: Credits
 --- !u!222 &1570990777
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2188,7 +2177,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 200}
-  m_SizeDelta: {x: 213.66302, y: 35.86084}
+  m_SizeDelta: {x: 118.12335, y: 35.86084}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1588163295
 MonoBehaviour:
@@ -2222,7 +2211,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "<b>Configura\xE7\xF5es</b>"
+  m_Text: <b>Settings</b>
 --- !u!222 &1588163296
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2349,7 +2338,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 200}
-  m_SizeDelta: {x: 112.42081, y: 38}
+  m_SizeDelta: {x: 108.44, y: 38}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1899544522
 MonoBehaviour:
@@ -2383,7 +2372,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "<b>Cr\xE9ditos</b>"
+  m_Text: <b>Credits</b>
 --- !u!222 &1899544523
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2461,7 +2450,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Jogar
+  m_Text: Play
 --- !u!222 &1964023533
 CanvasRenderer:
   m_ObjectHideFlags: 0
