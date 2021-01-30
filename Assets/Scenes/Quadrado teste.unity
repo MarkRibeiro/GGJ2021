@@ -1062,6 +1062,39 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1258764271}
   m_CullTransparentMesh: 0
+--- !u!1 &1303376970 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8164078558771037576, guid: 9b25d3219659d47419b1a70b253d8f21,
+    type: 3}
+  m_PrefabInstance: {fileID: 1336082297}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1303376971
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1303376970}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: 9b25d3219659d47419b1a70b253d8f21, type: 3}
+--- !u!114 &1303376974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1303376970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50e58e9147f8224449beff18da72c9d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treasure: {fileID: 0}
 --- !u!1001 &1336082297
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2053,6 +2086,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panSpeed: 100
   zoomSpeed: 1000
+  rotationSpeed: 10
   islandTransform: {fileID: 1549905487}
   cameraTransform: {fileID: 2020376999}
 --- !u!4 &2020376999
