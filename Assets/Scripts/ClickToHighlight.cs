@@ -19,7 +19,7 @@ public class ClickToHighlight : MonoBehaviour
             RaycastHit hit;
             
             if(Physics.Raycast(ray,out hit, 1000.0f)){
-                GetComponent<Renderer>().sharedMaterial.SetVector("_Center",hit.point);
+                GetComponent<Renderer>().sharedMaterial.SetVector("Vector3_C357230",hit.point);
             }
         }
     }
