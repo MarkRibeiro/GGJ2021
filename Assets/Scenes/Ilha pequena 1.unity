@@ -610,7 +610,7 @@ MonoBehaviour:
   treasure: 0
   areYouSure: 0
   confirmScreen: {fileID: 1566064014}
-  scene: 
+  scene: Ilha Grande
 --- !u!4 &485796708
 Transform:
   m_ObjectHideFlags: 0
@@ -786,6 +786,45 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 685829428}
   m_CullTransparentMesh: 0
+--- !u!4 &728020113 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9b25d3219659d47419b1a70b253d8f21,
+    type: 3}
+  m_PrefabInstance: {fileID: 1336082297}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &757788770 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8164078558771037576, guid: 9b25d3219659d47419b1a70b253d8f21,
+    type: 3}
+  m_PrefabInstance: {fileID: 1336082297}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &757788774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 757788770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50e58e9147f8224449beff18da72c9d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treasure: {fileID: 485796707}
+--- !u!64 &757788775
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 757788770}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: 9b25d3219659d47419b1a70b253d8f21, type: 3}
 --- !u!1 &939355666
 GameObject:
   m_ObjectHideFlags: 0
@@ -2003,11 +2042,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05535f83f23b75a4cb2d1a619d1d4f6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.01
+  panSpeed: 10
   zoomSpeed: 10
-  rotationSpeed: 0.01
-  maxHeight: 60
-  minHeight: 10
+  rotationSpeed: 0.31
+  islandTransform: {fileID: 728020113}
+  cameraTransform: {fileID: 2020376999}
 --- !u!4 &2020376999
 Transform:
   m_ObjectHideFlags: 0
