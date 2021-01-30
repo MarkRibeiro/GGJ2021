@@ -16,9 +16,15 @@ public class CameraController : MonoBehaviour
     Vector2 p1;
     Vector2 p2;
 
-    public Camera mainCamera;
+    private Camera mainCamera;
 
-
+    private void OnValidate()
+    {
+        if(mainCamera == null)
+        {
+            mainCamera = Camera.main;
+        }
+    }
     private void Start()
     {
         initialPosition = transform.position;

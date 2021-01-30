@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class ClickToHighlight : MonoBehaviour
 {
-    
+
+    public TreasueManeger treasure;
+
     void Start()
     {
         Renderer renderer = GetComponent<Renderer>();
@@ -20,6 +22,22 @@ public class ClickToHighlight : MonoBehaviour
             
             if(Physics.Raycast(ray,out hit, 1000.0f)){
                 GetComponent<Renderer>().sharedMaterial.SetVector("Vector3_C357230",hit.point);
+            }
+
+            if(treasure.treasure == false)
+            {
+                treasure.confirmScreen.SetActive(true);
+                Time.timeScale = 0;
+                if (treasure.areYouSure == true)
+                {
+                    TreasueManeger.localOfTreasure = hit.transform.position;
+                    treasure.treasure = true;
+                }
+            }
+            if(treasure == true)
+            {
+                TreasueManeger.localOfTreasure = hit.transform.position;
+                
             }
         }
     }
