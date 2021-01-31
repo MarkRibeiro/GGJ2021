@@ -32,13 +32,12 @@ public class ClickToHighlight : MonoBehaviour
                 if(TreasueManeger.treasure == false){
                     treasure.confirmScreen.SetActive(true);
                     Time.timeScale = 0;
-                    if (treasure.areYouSure == true){
-                        TreasueManeger.localOfTreasure = hit.transform.position;
-                        TreasueManeger.treasure = true;
-                    }
+                    TreasueManeger.localOfTreasure = hit.transform.position;
+                    TreasueManeger.treasure = true;
+                    Debug.Log("x= " + TreasueManeger.localOfTreasure.x + "y= " + TreasueManeger.localOfTreasure.y + "z= " + TreasueManeger.localOfTreasure.z);
                 }
                 if(TreasueManeger.treasure == true){
-                    if(Vector3.Distance(TreasueManeger.localOfTreasure, hit.transform.position) <= 5)
+                    if(Vector3.Distance(TreasueManeger.localOfTreasure, hit.transform.position) < 1)
                     {
                         gameOverScreen.SetActive(true);
                         Debug.Log("Achou o tesouro.");
