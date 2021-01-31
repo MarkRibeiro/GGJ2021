@@ -8226,6 +8226,8 @@ MonoBehaviour:
   confirmScreen: {fileID: 1566064014}
   scene: 
   st: {fileID: 0}
+  audioSource: {fileID: 0}
+  burrySound: {fileID: 0}
 --- !u!4 &485796708
 Transform:
   m_ObjectHideFlags: 0
@@ -15093,8 +15095,9 @@ AudioSource:
   m_GameObject: {fileID: 849657425}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: e1212a791c615694d9e04102f70d7b74,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: ef56aa27d9ab3724d9485b3d8e271eb3, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -23423,6 +23426,7 @@ MonoBehaviour:
   canvas: {fileID: 2024155103}
   pausePanel: {fileID: 978675548}
   configPanel: {fileID: 1670994195}
+  confirmCanvas: {fileID: 0}
 --- !u!4 &1371110677
 Transform:
   m_ObjectHideFlags: 0
