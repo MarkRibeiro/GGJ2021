@@ -619,7 +619,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f309e84e2595c2f4895507185e8e3140, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  treasure: 0
   areYouSure: 0
   confirmScreen: {fileID: 1566064014}
   scene: Ilha Grande
@@ -951,6 +950,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   treasure: {fileID: 485796707}
+  gameOverScreen: {fileID: 0}
+  wrongChoiceScreen: {fileID: 0}
 --- !u!64 &757788775
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2545,6 +2546,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8028291784607370093, guid: 588d4eb1999c6ee4ba67f3dcc46b2b97,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8028291785768040832, guid: 588d4eb1999c6ee4ba67f3dcc46b2b97,
         type: 3}
       propertyPath: m_Name
@@ -2555,6 +2561,11 @@ PrefabInstance:
       propertyPath: audioSource
       value: 
       objectReference: {fileID: 693166895}
+    - target: {fileID: 8028291785768040846, guid: 588d4eb1999c6ee4ba67f3dcc46b2b97,
+        type: 3}
+      propertyPath: transitionDuration
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8028291785768040847, guid: 588d4eb1999c6ee4ba67f3dcc46b2b97,
         type: 3}
       propertyPath: m_LocalPosition.x

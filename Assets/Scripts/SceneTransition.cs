@@ -8,6 +8,11 @@ public class SceneTransition : MonoBehaviour
     public AudioSource audioSource;
     public Animator fadeAnimation;
     public float transitionDuration;
+
+    public void StartChangeScene(string scene)
+    {
+        StartCoroutine(ChangeScene(scene));
+    }
     public IEnumerator ChangeScene(string scene)
     {
         float time = 0;
