@@ -6,7 +6,8 @@ public class ClickToHighlight : MonoBehaviour
 {
 
     public TreasueManeger treasure;
-
+    public GameObject gameOverScreen;
+    public GameObject wrongChoiceScreen;
     void Start()
     {
         Renderer renderer = GetComponent<Renderer>();
@@ -25,18 +26,27 @@ public class ClickToHighlight : MonoBehaviour
                     GetComponent<Renderer>().sharedMaterial.SetVector("Vector3_C357230",hit.point);
                 }
 
-                if(treasure.treasure == false){
+                if(TreasueManeger.treasure == false){
                     treasure.confirmScreen.SetActive(true);
                     Time.timeScale = 0;
                     if (treasure.areYouSure == true){
                         TreasueManeger.localOfTreasure = hit.transform.position;
-                        treasure.treasure = true;
+                        TreasueManeger.treasure = true;
                     }
                 }
-                if(treasure == true){
-                    TreasueManeger.localOfTreasure = hit.transform.position;
-                    
+                if(TreasueManeger.treasure == true){
+                    if(Vector3.Distance(TreasueManeger.localOfTreasure, hit.transform.position) >= 5 || Vector3.Distance(TreasueManeger.localOfTreasure, hit.transform.position) <= 5)
+                    {
+                        gameOverScreen.SetActive(true);
+                        Time.timeScale = 0;
+                    }
+                    else
+                    {
+                        wrongChoiceScreen.SetActive(true);
+                        Time.timeScale = 0;
+                    }
                 }
+                
             }
         }
     }

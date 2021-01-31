@@ -1,16 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+
 
 public class TreasueManeger : MonoBehaviour
 {
-    public bool treasure = false;
+    public static bool treasure = false;
     public bool areYouSure = false;
     public GameObject confirmScreen;
     public static Vector3 localOfTreasure;
-
     public string scene;
+    public SceneTransition st;
 
     private void Start()
     {
@@ -22,7 +22,8 @@ public class TreasueManeger : MonoBehaviour
         areYouSure = true;
         confirmScreen.SetActive(false);
         Time.timeScale = 1;
-        SceneManager.LoadScene(scene);
+        StartCoroutine(st.ChangeScene(scene));
+        
     }
     public void No()
     {
