@@ -23,7 +23,7 @@ public class SceneTransition : MonoBehaviour
         {
             yield return new WaitForSeconds(0.05f);
             time+=0.05f;
-            audioSource.volume = time * initialVolume / transitionDuration;
+            audioSource.volume = initialVolume - (time * initialVolume / transitionDuration);
         }
         SceneManager.LoadScene(scene);
     }

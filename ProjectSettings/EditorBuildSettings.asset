@@ -8,10 +8,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/main menu.unity
     guid: 6903a21b73ba1ed48a7acc4673f3fd2b
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Quadrado teste.unity
     guid: 9b8f80c2b9def1546a68aee61d511fae
   - enabled: 1
     path: Assets/Scenes/Ilha pequena 1.unity
     guid: 1666869a6a3fca043953f755a21f3b83
+  - enabled: 1
+    path: Assets/Scenes/Ilha Grande.unity
+    guid: c95f6a1f6cfdddf4095f2dabc88041d1
   m_configObjects: {}
