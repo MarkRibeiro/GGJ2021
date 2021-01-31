@@ -99,7 +99,7 @@ LightmapSettings:
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: 602fd2f9b40d57541bc0baebc64feaf4,
     type: 2}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -7040,6 +7040,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 379419387}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &383235329 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8028291785768040846, guid: 588d4eb1999c6ee4ba67f3dcc46b2b97,
+    type: 3}
+  m_PrefabInstance: {fileID: 1389766969}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36796f1699497674aa000de4e6e91ade, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &383307915
 GameObject:
   m_ObjectHideFlags: 0
@@ -15797,6 +15809,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 5524070183043772343, guid: 6e1e64c020a8a2b46ad10cdc31615517,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 383235329}
+    - target: {fileID: 5524070183043772343, guid: 6e1e64c020a8a2b46ad10cdc31615517,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: StartChangeScene
+      objectReference: {fileID: 0}
     - target: {fileID: 5524070183391081326, guid: 6e1e64c020a8a2b46ad10cdc31615517,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -18345,6 +18367,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5114639344336379288, guid: 369e608c40730374cb6adaf7385140d9,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 369e608c40730374cb6adaf7385140d9, type: 3}
@@ -38682,6 +38709,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5114639344336379288, guid: 8e259a769a545414cb0d1d23b4c8a268,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e259a769a545414cb0d1d23b4c8a268, type: 3}
