@@ -99,7 +99,7 @@ LightmapSettings:
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: d3ce09f2bc039be4bbaeb5e0069034c2,
     type: 2}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -18725,9 +18725,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05535f83f23b75a4cb2d1a619d1d4f6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panSpeed: 10
-  zoomSpeed: 10
-  rotationSpeed: 0.31
+  panSpeed: 100
+  zoomSpeed: 9001
+  rotationSpeed: 21
   islandTransform: {fileID: 728020113}
   cameraTransform: {fileID: 2020376999}
 --- !u!4 &2020376999
@@ -18737,14 +18737,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2020376997}
-  m_LocalRotation: {x: 0.057945583, y: -0, z: -0, w: 0.99831975}
-  m_LocalPosition: {x: 12.9, y: 52.8, z: -58.6}
+  m_LocalRotation: {x: 0.011326755, y: 0.99192894, z: -0.116948426, w: 0.04766309}
+  m_LocalPosition: {x: 10.6, y: 49, z: 47}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 663640387}
   m_Father: {fileID: 0}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 6.6440005, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 13.479001, y: 174.57701, z: 0.66700006}
 --- !u!1001 &2027888155
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20468,6 +20468,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 453642169}
+    - target: {fileID: 5524070183391081326, guid: 6e1e64c020a8a2b46ad10cdc31615517,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e1e64c020a8a2b46ad10cdc31615517, type: 3}
 --- !u!1001 &8028291785852321335
