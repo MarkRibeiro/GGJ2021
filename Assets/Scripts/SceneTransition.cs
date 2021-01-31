@@ -11,8 +11,8 @@ public class SceneTransition : MonoBehaviour
     public IEnumerator ChangeScene(string scene)
     {
         float time = 0;
-        float ratioPerInterval = 1/transitionDuration;
         float initialVolume = audioSource.volume;
+        fadeAnimation.speed = 1/transitionDuration;
         fadeAnimation.SetTrigger("BeginCrossFade");
         while(time<transitionDuration)
         {
