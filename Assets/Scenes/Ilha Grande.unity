@@ -12641,6 +12641,22 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2080547768}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &716683760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 716683759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16ef618d6c53cf74594095704fe5e7cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arrg: {fileID: 8300000, guid: 817f2de3ac7f7b64f80ad391a64f0bee, type: 3}
+  victoryClip: {fileID: 8300000, guid: 7fba1c2f64d9bcb44a09f045a0f55cc9, type: 3}
+  picareta: {fileID: 8300000, guid: 16327e727bf9d754dbe6ecb820dd17a2, type: 3}
+  source: {fileID: 849657426}
 --- !u!1001 &721206724
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16283,6 +16299,21 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 950659998}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &912731973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 912731972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf3df9fea23eb2e4181541f5d60eae98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  failedClip: {fileID: 8300000, guid: 56b0e9ed0b0c9f943a1b57eb847b3027, type: 3}
+  source: {fileID: 849657426}
+  picareta: {fileID: 8300000, guid: 16327e727bf9d754dbe6ecb820dd17a2, type: 3}
 --- !u!1001 &914652694
 PrefabInstance:
   m_ObjectHideFlags: 0
