@@ -8,9 +8,12 @@ public class ClickToHighlight : MonoBehaviour
     public TreasueManeger treasure;
     public GameObject gameOverScreen;
     public GameObject wrongChoiceScreen;
+    private Renderer renderer;
     void Start()
     {
-        Renderer renderer = GetComponent<Renderer>();
+        renderer = GetComponent<Renderer>();
+        renderer.sharedMaterial.SetVector("Vector3_C357230", new Vector3(1000f, 1000f, 1000f));
+
     }
 
     
@@ -23,7 +26,7 @@ public class ClickToHighlight : MonoBehaviour
                 RaycastHit hit;
                 
                 if(Physics.Raycast(ray,out hit, 1000.0f)){
-                    GetComponent<Renderer>().sharedMaterial.SetVector("Vector3_C357230",hit.point);
+                    renderer.sharedMaterial.SetVector("Vector3_C357230",hit.point);
                 }
 
                 if(TreasueManeger.treasure == false){
