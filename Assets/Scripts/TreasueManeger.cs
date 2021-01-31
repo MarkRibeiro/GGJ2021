@@ -42,6 +42,5 @@ public class TreasueManeger : MonoBehaviour
         confirmScreen.SetActive(false);
         gameOverScreen.SetActive(false);
         wrongChoiceScreen.SetActive(false);
-        
     }
 }
