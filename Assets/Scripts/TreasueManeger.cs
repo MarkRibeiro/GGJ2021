@@ -11,6 +11,8 @@ public class TreasueManeger : MonoBehaviour
     public static Vector3 localOfTreasure;
     public string scene;
     public SceneTransition st;
+    public AudioSource audioSource;
+    public AudioClip burrySound;
 
     private void Start()
     {
@@ -22,6 +24,7 @@ public class TreasueManeger : MonoBehaviour
         areYouSure = true;
         confirmScreen.SetActive(false);
         Time.timeScale = 1;
+        audioSource.PlayOneShot(burrySound);
         StartCoroutine(st.ChangeScene(scene));
         
     }
