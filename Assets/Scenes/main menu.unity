@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1267,6 +1267,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2cc96d3bc190bc4882641c55bb65c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  configPanel: {fileID: 984291333}
   Level: Quadrado teste
 --- !u!1 &984291333 stripped
 GameObject:
@@ -1661,14 +1662,14 @@ RectTransform:
   m_GameObject: {fileID: 1129823479}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.223028, y: 3.223028, z: 3.223028}
+  m_LocalScale: {x: 4.3460755, y: 4.3460755, z: 4.3460755}
   m_Children: []
   m_Father: {fileID: 841034806}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 196, y: -49}
+  m_AnchoredPosition: {x: 227, y: -24}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1129823481
@@ -2620,7 +2621,7 @@ PrefabInstance:
     - target: {fileID: 3890542605793762412, guid: cb6c1c31090f51949872ad709eace9a4,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3890542605793762415, guid: cb6c1c31090f51949872ad709eace9a4,
         type: 3}
