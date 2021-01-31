@@ -78,7 +78,7 @@ Material:
     m_Colors:
     - Color_5806B7A2: {r: 1, g: 0, b: 0, a: 0}
     - Color_8DF05110: {r: 0.1167121, g: 1, b: 0, a: 0}
-    - Vector3_C357230: {r: 13.366612, g: 23.279997, b: -3.5819016, a: 0}
+    - Vector3_C357230: {r: 11.4238615, g: 24.779999, b: -7.7813616, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
