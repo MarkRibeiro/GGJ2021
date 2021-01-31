@@ -13,8 +13,14 @@ public class VolumeSlider : MonoBehaviour
     {
         volumeSlider = GetComponent<Slider>();
         volumeSlider.onValueChanged.AddListener(changeVolume);
-        if(PlayerPrefs.HasKey("Volume")) gameMixer.SetFloat("mixerVolume", PlayerPrefs.GetFloat("Volume"));
-        else gameMixer.SetFloat("mixerVolume", 0);
+        if(PlayerPrefs.HasKey("Volume")){
+            gameMixer.SetFloat("mixerVolume", PlayerPrefs.GetFloat("Volume"));
+            volumeSlider.value = PlayerPrefs.GetFloat("Volume");
+        } 
+        else{
+            gameMixer.SetFloat("mixerVolume", 0);
+            volumeSlider.value = 0.0f;
+        } 
         
     }
 
