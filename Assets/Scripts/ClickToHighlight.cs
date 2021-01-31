@@ -35,7 +35,7 @@ public class ClickToHighlight : MonoBehaviour
                     }
                 }
                 if(TreasueManeger.treasure == true){
-                    if((hit.transform.position.x == TreasueManeger.localOfTreasure.x) && (hit.transform.position.z == TreasueManeger.localOfTreasure.z))
+                    if(Vector3.Distance(TreasueManeger.localOfTreasure, hit.transform.position) >= 5 || Vector3.Distance(TreasueManeger.localOfTreasure, hit.transform.position) <= 5)
                     {
                         gameOverScreen.SetActive(true);
                         Time.timeScale = 0;
