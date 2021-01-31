@@ -12,13 +12,16 @@ public class VolumeSlider : MonoBehaviour
     void Start()
     {
         volumeSlider = GetComponent<Slider>();
-        gameMixer.SetFloat("mixerVolume", PlayerPrefs.GetFloat("Volume"));
+        volumeSlider.onValueChanged.AddListener(changeVolume);
+        if(PlayerPrefs.HasKey("Volume")) gameMixer.SetFloat("mixerVolume", PlayerPrefs.GetFloat("Volume"));
+        else gameMixer.SetFloat("mixerVolume", 0);
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        volumeSlider.onValueChanged.AddListener(changeVolume);
+        
     }
 
     void changeVolume(float currentValue)
