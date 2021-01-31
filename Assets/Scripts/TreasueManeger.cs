@@ -8,6 +8,8 @@ public class TreasueManeger : MonoBehaviour
     public static bool treasure = false;
     public bool areYouSure = false;
     public GameObject confirmScreen;
+    public GameObject gameOverScreen;
+    public GameObject wrongChoiceScreen;
     public static Vector3 localOfTreasure;
     public string scene;
     public SceneTransition st;
@@ -17,10 +19,12 @@ public class TreasueManeger : MonoBehaviour
     private void Start()
     {
         confirmScreen.SetActive(false);
+        gameOverScreen.SetActive(false);
+        wrongChoiceScreen.SetActive(false);
     }
     public void Yes()
     {
-        Debug.Log("Sim");
+        treasure = true;
         areYouSure = true;
         confirmScreen.SetActive(false);
         Time.timeScale = 1;
@@ -33,6 +37,13 @@ public class TreasueManeger : MonoBehaviour
         Debug.Log("Não");
         areYouSure = false;
         confirmScreen.SetActive(false);
+        gameOverScreen.SetActive(false);
+        wrongChoiceScreen.SetActive(false);
+        Time.timeScale = 1;
+    }
+    public void Resume()
+    {
+        wrongChoiceScreen.SetActive(false);
         Time.timeScale = 1;
     }
 }
