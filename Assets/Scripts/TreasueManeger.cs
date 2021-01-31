@@ -21,6 +21,7 @@ public class TreasueManeger : MonoBehaviour
         confirmScreen.SetActive(false);
         gameOverScreen.SetActive(false);
         wrongChoiceScreen.SetActive(false);
+        Debug.Log("x= " + TreasueManeger.localOfTreasure.x + "y= " + TreasueManeger.localOfTreasure.y + "z= " + TreasueManeger.localOfTreasure.z);
     }
     public void Yes()
     {
