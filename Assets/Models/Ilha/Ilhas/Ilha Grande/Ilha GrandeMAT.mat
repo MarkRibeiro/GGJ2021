@@ -77,7 +77,7 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - Color_5806B7A2: {r: 1, g: 0, b: 0, a: 0}
-    - Vector3_C357230: {r: 8.158506, g: 22.394255, b: -33.01685, a: 0}
+    - Vector3_C357230: {r: 11.298008, g: 23.68, b: -24.708704, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
