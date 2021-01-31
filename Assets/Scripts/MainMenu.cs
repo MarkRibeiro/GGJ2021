@@ -5,7 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    public GameObject configPanel;
+
     public string Level;
+    void Start()
+    {
+        configPanel.SetActive(false);
+    }
     public void Play(){
         SceneManager.LoadScene(Level);
     }
