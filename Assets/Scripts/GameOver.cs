@@ -19,4 +19,9 @@ public class GameOver : MonoBehaviour
         source.PlayOneShot(arrg);
 
     }
+
+    private void OnDisable()
+    {
+        Time.timeScale = 1;
+    }
 }
