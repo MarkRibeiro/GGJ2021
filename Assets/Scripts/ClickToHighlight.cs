@@ -38,7 +38,7 @@ public class ClickToHighlight : MonoBehaviour
                     }
                 }
                 if(TreasueManeger.treasure == true){
-                    if(Vector3.Distance(TreasueManeger.localOfTreasure, hit.transform.position) >= 5 || Vector3.Distance(TreasueManeger.localOfTreasure, hit.transform.position) <= 5)
+                    if(Vector3.Distance(TreasueManeger.localOfTreasure, hit.transform.position) <= 5)
                     {
                         gameOverScreen.SetActive(true);
                         Debug.Log("Achou o tesouro.");
