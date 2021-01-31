@@ -41,11 +41,13 @@ public class ClickToHighlight : MonoBehaviour
                     if(Vector3.Distance(TreasueManeger.localOfTreasure, hit.transform.position) >= 5 || Vector3.Distance(TreasueManeger.localOfTreasure, hit.transform.position) <= 5)
                     {
                         gameOverScreen.SetActive(true);
+                        Debug.Log("Achou o tesouro.");
                         Time.timeScale = 0;
                     }
                     else
                     {
                         wrongChoiceScreen.SetActive(true);
+                        Debug.Log("Errou o tesouro.");
                         Time.timeScale = 0;
                     }
                 }
