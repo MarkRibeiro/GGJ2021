@@ -11,6 +11,10 @@ public class SceneTransition : MonoBehaviour
 
     public void StartChangeScene(string scene)
     {
+        if(scene == "Ilha pequena 1")
+        {
+            TreasueManeger.treasure = false;
+        }
         StartCoroutine(ChangeScene(scene));
     }
     public IEnumerator ChangeScene(string scene)

@@ -44,9 +44,4 @@ public class TreasueManeger : MonoBehaviour
         wrongChoiceScreen.SetActive(false);
         
     }
-    public void Resume()
-    {
-        wrongChoiceScreen.SetActive(false);
-        Time.timeScale = 1;
-    }
 }
