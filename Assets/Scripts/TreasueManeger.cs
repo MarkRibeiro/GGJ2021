@@ -36,11 +36,13 @@ public class TreasueManeger : MonoBehaviour
     public void No()
     {
         Debug.Log("Não");
+        Time.timeScale = 1;
         areYouSure = false;
+        treasure = false;
         confirmScreen.SetActive(false);
         gameOverScreen.SetActive(false);
         wrongChoiceScreen.SetActive(false);
-        Time.timeScale = 1;
+        
     }
     public void Resume()
     {
