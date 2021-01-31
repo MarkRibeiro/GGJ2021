@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class TreasueManeger : MonoBehaviour
 {
-    public bool treasure = false;
+    public static bool treasure = false;
     public bool areYouSure = false;
     public GameObject confirmScreen;
     public static Vector3 localOfTreasure;
