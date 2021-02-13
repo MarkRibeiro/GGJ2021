@@ -37,7 +37,7 @@ public class ClickToHighlight : MonoBehaviour
                     Debug.Log("x= " + TreasueManeger.localOfTreasure.x + "y= " + TreasueManeger.localOfTreasure.y + "z= " + TreasueManeger.localOfTreasure.z);
                 }
                 if(TreasueManeger.treasure == true){
-                    if(Vector3.Distance(TreasueManeger.localOfTreasure, hit.transform.position) < 17.5)
+                    if(Vector3.Distance(TreasueManeger.localOfTreasure, hit.transform.position) < 1.5)
                     {
                         gameOverScreen.SetActive(true);
                         Debug.Log("Achou o tesouro.");
