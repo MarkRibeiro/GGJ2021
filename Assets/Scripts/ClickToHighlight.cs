@@ -19,6 +19,7 @@ public class ClickToHighlight : MonoBehaviour
     
     void Update()
     {
+        Debug.Log("treasure? " + TreasueManeger.treasure);
         if(Time.timeScale == 1){    
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             Debug.DrawRay(ray.origin,ray.direction*100, Color.magenta, 0.02f);
@@ -30,7 +31,6 @@ public class ClickToHighlight : MonoBehaviour
                 RaycastHit hit;
                 
                 if(Physics.Raycast(ray,out hit, 1000.0f) && hit.transform.name != "Oceano"){
-                    Debug.Log(hit.transform.name);
                     matRenderer.sharedMaterial.SetVector("Vector3_C357230",hit.point);
 
                     if(TreasueManeger.treasure == false){
@@ -42,8 +42,8 @@ public class ClickToHighlight : MonoBehaviour
                     }
 
                     if(TreasueManeger.treasure == true){
-                        Debug.Log("distance: "+Vector3.Distance(TreasueManeger.localOfTreasure, hit.transform.position));
-                        if(Vector3.Distance(TreasueManeger.localOfTreasure, hit.point) < 2.2f)
+                        Debug.Log("distance: "+Vector3.Distance(TreasueManeger.localOfTreasure, hit.point));
+                        if(Vector3.Distance(TreasueManeger.localOfTreasure, hit.point) < 5.5f)
                         {
                             gameOverScreen.SetActive(true);
                             Debug.Log("Achou o tesouro.");
