@@ -22,6 +22,10 @@ public class ClickToHighlight : MonoBehaviour
         if(Time.timeScale == 1){    
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             Debug.DrawRay(ray.origin,ray.direction*100, Color.magenta, 0.02f);
+            if(TreasueManeger.treasure == true){
+                Debug.DrawRay(TreasueManeger.localOfTreasure,Vector3.up,Color.blue);
+                Debug.Log("Tesouro: "+TreasueManeger.localOfTreasure);
+            }
             if( Input.GetMouseButtonDown(0)){
                 RaycastHit hit;
                 
@@ -38,7 +42,8 @@ public class ClickToHighlight : MonoBehaviour
                     }
 
                     if(TreasueManeger.treasure == true){
-                        if(Vector3.Distance(TreasueManeger.localOfTreasure, hit.transform.position) < 1.5)
+                        Debug.Log("distance: "+Vector3.Distance(TreasueManeger.localOfTreasure, hit.transform.position));
+                        if(Vector3.Distance(TreasueManeger.localOfTreasure, hit.point) < 2.2f)
                         {
                             gameOverScreen.SetActive(true);
                             Debug.Log("Achou o tesouro.");
